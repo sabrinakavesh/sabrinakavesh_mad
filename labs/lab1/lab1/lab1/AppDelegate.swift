@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  helloWorld
+//  lab1
 //
-//  Created by Sabrina Kavesh on 8/29/19.
-//  Copyright © 2019 Sabrina Kavesh. All rights reserved.
+//  Created by Sabrina on 9/10/19.
+//  Copyright © 2019 Sabrina. All rights reserved.
 //
 
 import UIKit
