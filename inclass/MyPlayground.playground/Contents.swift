@@ -60,3 +60,36 @@ default:
 for count in 0...age{ //for i in range, same as for var i=0; i<age; i++)
     print(count)
 }
+
+//functions
+func sayHi(){
+    print("Hi class")
+}
+
+sayHi()
+
+func sayHello(first:String, last:String){
+    print("Hi \(first) \(last)")
+}
+
+sayHello(first: "Bill", last: "Adams")
+
+func sayWhat(firstName first:String, lastName last:String){
+    print("What \(first) \(last)")
+}
+
+sayWhat(firstName: "Stacey", lastName: "Smith")
+
+func sayWhere(_ place:String){
+    print(place)
+} //underscore means not specifying a name
+
+sayWhere("Boulder")
+
+func sayWho(firstName: String, lastName:String) -> String {
+    return "Who " + firstName + " " + lastName + "?"
+}
+
+let msg2 = sayWho(firstName: "Jim", lastName: "Adams")
+print(msg2)
+
