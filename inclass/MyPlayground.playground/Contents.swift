@@ -79,6 +79,7 @@ func sayWhat(firstName first:String, lastName last:String){
 }
 
 sayWhat(firstName: "Stacey", lastName: "Smith")
+//if it was sayWhat(_ first:string) dont have external so dont need to pass a name when calling, ex(sayWhay("stacey")
 
 func sayWhere(_ place:String){
     print(place)
