@@ -5,6 +5,11 @@ let classMax : Int = 30
 var age : Int
 age = 21
 
+var test : String
+test = "21"
+
+print("my age is " + test)
+
 var name = "Aileen"
 //if don't specify type it will use type inference
 
@@ -57,7 +62,7 @@ default:
 //need default so switch statement will exit or end and not loop forever
 
 //loops, for and while, not standard c style forloop
-for count in 0...age{ //for i in range, same as for var i=0; i<age; i++)
+for count in 0...age{ //for i in range, same as for var i=0; i<=age; i++)
     print(count)
 }
 

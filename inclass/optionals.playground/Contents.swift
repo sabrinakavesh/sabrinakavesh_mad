@@ -104,3 +104,12 @@ classes["4120"]
 classes.removeValue(forKey: "2200")
 classes["2000"]="MIT"
 classes.count
+
+var testDict = [String:String]()
+var test1 = 2
+var test2 = "hello"
+var test3 = "adjective"
+//var diction
+var dict:[String] = [test
+
+//testDict = ["vacAdj]
