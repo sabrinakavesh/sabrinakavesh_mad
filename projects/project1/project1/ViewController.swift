@@ -33,6 +33,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var storyControl: UISegmentedControl!
     
+    @IBOutlet weak var soonLabel: UILabel!
     @IBOutlet weak var clearButton: UIButton!
     @IBAction func clearFieldsButton(_ sender: UIButton) {
        //reload/clear text field contents
@@ -84,9 +85,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         else if storyControl.selectedSegmentIndex == 1 {
             //hakAdj1.isHidden=false
+            soonLabel.isHidden=false
         }
         else if storyControl.selectedSegmentIndex == 2 {
-            
+            soonLabel.isHidden=false
         }
     }
     
@@ -163,6 +165,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         vacVerb4.delegate=self
         vacNum1.delegate=self
         
+        soonLabel.isHidden=true
         clearButton.isHidden=true
     //covacPnoun4de to get all textfields, func getTExtField is below as well https:\//stackoverflow.com/questions/40908471/how-to-get-all-the-textfields-from-a-view-in-swift/40909069
         let allTextField = getTextfield(view: self.view)
