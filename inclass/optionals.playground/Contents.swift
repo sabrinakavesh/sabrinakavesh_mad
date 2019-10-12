@@ -105,11 +105,28 @@ classes.removeValue(forKey: "2200")
 classes["2000"]="MIT"
 classes.count
 
-var testDict = [String:String]()
-var test1 = 2
-var test2 = "hello"
-var test3 = "adjective"
-//var diction
-var dict:[String] = [test
+//var testDict = [String:String]()
+//var test1 = 2
+//var test2 = "hello"
+//var test3 = "adjective"
+////var diction
+//var dict:[String] = [test]
 
 //testDict = ["vacAdj]
+
+var vacAdj1 = "adjective"
+var vacAdj2 = " "
+var vacation = [String]()
+vacation.append(vacAdj1)
+vacation.count
+print(vacation[0])
+
+var blanks = [vacAdj1, vacAdj2];
+for count in 0...blanks.count{
+//    if blanks[count].text!.isEmpty {
+//        String(blanks[count].text!) = " "
+//    }
+    print(blanks[count])
+}
+//blanks.count
+//print(blanks.count)

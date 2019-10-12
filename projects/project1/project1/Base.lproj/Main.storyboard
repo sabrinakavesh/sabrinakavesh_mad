@@ -15,66 +15,243 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="project1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xRP-ot-sCR">
-                                <rect key="frame" x="20" y="120" width="374" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Vacations"/>
-                                    <segment title="Hakuna Matata"/>
-                                    <segment title="Day at College"/>
-                                </segments>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MadLibs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfM-dH-YuP">
-                                <rect key="frame" x="151" y="63" width="112" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <color key="textColor" red="0.097982079614747808" green="0.18668953232844288" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adjective" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fSN-sN-37F">
-                                <rect key="frame" x="20" y="196" width="125" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adjective" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j8f-sv-KTU">
-                                <rect key="frame" x="20" y="246" width="125" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4k-WG-xGJ">
-                                <rect key="frame" x="184" y="789" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufh-4j-Sek">
-                                <rect key="frame" x="87" y="615" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adjective" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CkZ-fX-AAf">
-                                <rect key="frame" x="20" y="298" width="125" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8IR-1R-S4E">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="916"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bg1-zr-HL4">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="950"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="f0j-wP-oht">
+                                                <rect key="frame" x="20" y="20" width="374" height="624"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MadLibs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfM-dH-YuP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="xRP-ot-sCR">
+                                                        <rect key="frame" x="0.0" y="76" width="374" height="29"/>
+                                                        <segments>
+                                                            <segment title="Vacations"/>
+                                                            <segment title="Hakuna Matata"/>
+                                                            <segment title="Day at College"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="changeStory:" destination="BYZ-38-t0r" eventType="valueChanged" id="Hci-Vn-H0O"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="94" translatesAutoresizingMaskIntoConstraints="NO" id="1ZW-vZ-F2l">
+                                                        <rect key="frame" x="0.0" y="144" width="374" height="480"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Eqt-7y-U4U">
+                                                                <rect key="frame" x="0.0" y="0.0" width="140" height="480"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adjective" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fSN-sN-37F">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Noun" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghD-AX-8k7">
+                                                                        <rect key="frame" x="0.0" y="50" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Plural Noun" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zWF-rR-CLq">
+                                                                        <rect key="frame" x="0.0" y="100" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Plural Noun" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hnq-x7-5o3">
+                                                                        <rect key="frame" x="0.0" y="150" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verb end -ing" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r3T-GT-Zur">
+                                                                        <rect key="frame" x="0.0" y="200" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verb end -ing" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U42-0y-wBq">
+                                                                        <rect key="frame" x="0.0" y="250" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Plant" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="US8-Yd-639">
+                                                                        <rect key="frame" x="0.0" y="300" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Place" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0qF-Vp-Ad6">
+                                                                        <rect key="frame" x="0.0" y="350" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adjective" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CkZ-fX-AAf">
+                                                                        <rect key="frame" x="0.0" y="400" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Plural Noun" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4r4-dT-aFu">
+                                                                        <rect key="frame" x="0.0" y="450" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jxb-r9-nWp">
+                                                                <rect key="frame" x="234" y="0.0" width="140" height="480"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adjective" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j8f-sv-KTU">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Noun" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8hc-C6-vqg">
+                                                                        <rect key="frame" x="0.0" y="50" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Game" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0MS-8x-FV5">
+                                                                        <rect key="frame" x="0.0" y="100" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verb end -ing" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CN0-JX-pg3">
+                                                                        <rect key="frame" x="0.0" y="150" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Plural Noun" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c4l-fp-msw">
+                                                                        <rect key="frame" x="0.0" y="200" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Noun" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UIf-IE-Dkv">
+                                                                        <rect key="frame" x="0.0" y="250" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Part of Body" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y6f-We-Sae">
+                                                                        <rect key="frame" x="0.0" y="300" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verb end -ing" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ndh-ix-BdP">
+                                                                        <rect key="frame" x="0.0" y="350" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="44h-op-ko7">
+                                                                        <rect key="frame" x="0.0" y="400" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adjective" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PCB-fM-gFD">
+                                                                        <rect key="frame" x="0.0" y="450" width="140" height="30"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" keyboardDismissMode="interactive" editable="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ufh-4j-Sek">
+                                                <rect key="frame" x="20" y="664" width="374" height="123"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4k-WG-xGJ">
+                                                <rect key="frame" x="20" y="827" width="374" height="36"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <state key="normal" title="Reset Story"/>
+                                                <connections>
+                                                    <action selector="clearFieldsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R7q-o3-Izp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="G4k-WG-xGJ" secondAttribute="trailing" constant="20" id="7av-PC-zz3"/>
+                                            <constraint firstItem="ufh-4j-Sek" firstAttribute="top" secondItem="f0j-wP-oht" secondAttribute="bottom" constant="20" id="9di-oh-9ca"/>
+                                            <constraint firstItem="ufh-4j-Sek" firstAttribute="leading" secondItem="Bg1-zr-HL4" secondAttribute="leading" constant="20" id="I8E-Gg-r2g"/>
+                                            <constraint firstAttribute="bottom" secondItem="G4k-WG-xGJ" secondAttribute="bottom" constant="20" id="KlN-Ij-Lar"/>
+                                            <constraint firstAttribute="trailing" secondItem="ufh-4j-Sek" secondAttribute="trailing" constant="20" id="RmU-6b-YLk"/>
+                                            <constraint firstAttribute="trailing" secondItem="f0j-wP-oht" secondAttribute="trailing" constant="20" id="Wfr-wD-ChI"/>
+                                            <constraint firstItem="G4k-WG-xGJ" firstAttribute="leading" secondItem="Bg1-zr-HL4" secondAttribute="leading" constant="20" id="dGY-1p-Ddm"/>
+                                            <constraint firstItem="G4k-WG-xGJ" firstAttribute="top" secondItem="ufh-4j-Sek" secondAttribute="bottom" constant="20" id="pG9-lp-CJF"/>
+                                            <constraint firstItem="f0j-wP-oht" firstAttribute="leading" secondItem="Bg1-zr-HL4" secondAttribute="leading" constant="20" id="pH7-Qt-ADX"/>
+                                            <constraint firstItem="f0j-wP-oht" firstAttribute="top" secondItem="Bg1-zr-HL4" secondAttribute="top" constant="20" id="zEH-66-hDb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Bg1-zr-HL4" secondAttribute="trailing" id="4o7-Ky-rFd"/>
+                                    <constraint firstItem="Bg1-zr-HL4" firstAttribute="top" secondItem="8IR-1R-S4E" secondAttribute="top" id="5aU-Lt-ge1"/>
+                                    <constraint firstItem="Bg1-zr-HL4" firstAttribute="leading" secondItem="8IR-1R-S4E" secondAttribute="leading" id="bOq-r4-jIt"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bg1-zr-HL4" secondAttribute="bottom" id="e2P-aN-423"/>
+                                    <constraint firstItem="Bg1-zr-HL4" firstAttribute="width" secondItem="8IR-1R-S4E" secondAttribute="width" id="hyl-Qu-i3A"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8IR-1R-S4E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Oc-B7-SCV"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="8IR-1R-S4E" secondAttribute="bottom" id="BeB-T9-CNB"/>
+                            <constraint firstItem="8IR-1R-S4E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="H5Q-Vq-HJR"/>
+                            <constraint firstItem="8IR-1R-S4E" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Mom-Eo-kf7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <size key="freeformSize" width="414" height="950"/>
                     <connections>
+                        <outlet property="hakAdj1" destination="PCB-fM-gFD" id="zZe-3H-MmW"/>
+                        <outlet property="storyControl" destination="xRP-ot-sCR" id="W7v-hy-ijZ"/>
                         <outlet property="vacAdj1" destination="fSN-sN-37F" id="fBW-5g-6PM"/>
                         <outlet property="vacAdj2" destination="j8f-sv-KTU" id="g3B-TV-X9P"/>
                         <outlet property="vacAdj3" destination="CkZ-fX-AAf" id="Tkg-sZ-ulq"/>
+                        <outlet property="vacBody1" destination="Y6f-We-Sae" id="6hL-4k-Who"/>
+                        <outlet property="vacGame1" destination="0MS-8x-FV5" id="Gjj-v3-nWF"/>
+                        <outlet property="vacNoun1" destination="ghD-AX-8k7" id="toz-sj-nPk"/>
+                        <outlet property="vacNoun2" destination="8hc-C6-vqg" id="975-Jm-GgF"/>
+                        <outlet property="vacNoun3" destination="UIf-IE-Dkv" id="vTx-Np-qQb"/>
+                        <outlet property="vacNum1" destination="44h-op-ko7" id="6zB-TJ-6uY"/>
+                        <outlet property="vacPlace1" destination="0qF-Vp-Ad6" id="l3H-wz-234"/>
+                        <outlet property="vacPlant1" destination="US8-Yd-639" id="PaU-iP-8aQ"/>
+                        <outlet property="vacPnoun1" destination="zWF-rR-CLq" id="47N-WJ-RwB"/>
+                        <outlet property="vacPnoun2" destination="Hnq-x7-5o3" id="4Sc-Mu-iuP"/>
+                        <outlet property="vacPnoun3" destination="c4l-fp-msw" id="aMc-9b-XSI"/>
+                        <outlet property="vacPnoun4" destination="4r4-dT-aFu" id="gXr-Ys-eQA"/>
+                        <outlet property="vacVerb1" destination="CN0-JX-pg3" id="F20-uM-9zh"/>
+                        <outlet property="vacVerb2" destination="r3T-GT-Zur" id="b15-xU-v5q"/>
+                        <outlet property="vacVerb3" destination="U42-0y-wBq" id="SXW-D3-UQC"/>
+                        <outlet property="vacVerb4" destination="Ndh-ix-BdP" id="bPK-G1-dfE"/>
                         <outlet property="vacationView" destination="ufh-4j-Sek" id="JYD-wA-Ebo"/>
                     </connections>
                 </viewController>
