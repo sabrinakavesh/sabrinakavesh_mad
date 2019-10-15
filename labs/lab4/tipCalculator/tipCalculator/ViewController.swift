@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var tipDue: UILabel!
     @IBOutlet weak var totalDue: UILabel!
     @IBOutlet weak var totalDuePerPerson: UILabel!
-    @IBOutlet weak var testView: UITextView!
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -75,7 +75,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             present(alert, animated: true, completion: nil)
         } //end else
         
-        testView.text = "Testing Testing"
+       // testView.text = "Testing Testing"
         //format results as currency
         let currencyFormatter = NumberFormatter()
         currencyFormatter.numberStyle=NumberFormatter.Style.currency

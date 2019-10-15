@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qs5-nV-Isx">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qs5-nV-Isx">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3J-Yd-ON2">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3J-Yd-ON2">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="679"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="MvL-Ka-ld5">
-                                                <rect key="frame" x="20" y="20" width="335" height="778"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="MvL-Ka-ld5">
+                                                <rect key="frame" x="20" y="20" width="335" height="639"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="t0P-gw-0Te">
                                                         <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
@@ -112,14 +112,8 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="Text Test" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ufN-gi-cEw">
-                                                        <rect key="frame" x="0.0" y="589" width="335" height="59"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="AN4-Tp-qVG">
-                                                        <rect key="frame" x="0.0" y="728" width="335" height="50"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="AN4-Tp-qVG">
+                                                        <rect key="frame" x="0.0" y="589" width="335" height="50"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Total per person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6PH-hW-TNE">
                                                                 <rect key="frame" x="0.0" y="0.0" width="201" height="50"/>
@@ -169,7 +163,6 @@
                         <outlet property="checkAmount" destination="oIF-ZO-G0L" id="9UM-03-S8r"/>
                         <outlet property="peopleLabel" destination="egS-IN-KuN" id="Msw-Qg-cMn"/>
                         <outlet property="peopleStepper" destination="qej-Dm-s9K" id="XM6-ek-GE1"/>
-                        <outlet property="testView" destination="ufN-gi-cEw" id="pVn-Rw-1hL"/>
                         <outlet property="tipDue" destination="Jfk-54-xvD" id="vIb-lK-RwM"/>
                         <outlet property="tipPercent" destination="h1t-TF-zNv" id="vzC-b6-gbZ"/>
                         <outlet property="totalDue" destination="4Yq-wq-Wzi" id="MSY-yn-QH7"/>
