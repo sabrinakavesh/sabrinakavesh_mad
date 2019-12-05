@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         String noun2vac = vacNoun2.getText().toString();
 
         TextView readStory = findViewById(R.id.storyView);
-        readStory.setText("A vacation is when to take a trip to some " + adj1vac + " place with your " + adj2vac + " family. Usually you go to some place that is near a/an " + noun1vac + " or up on a/an " + noun2vac + ".");
-
+        //readStory.setText("A vacation is when to take a trip to some " + adj1vac + " place with your " + adj2vac + " family. Usually you go to some place that is near a/an " + noun1vac + " or up on a/an " + noun2vac + ".");
+        readStory.setText(getString(R.string.message) + " " + adj1vac + " " + getString(R.string.message2) + " " + adj2vac + " " + getString(R.string.message3) );
 
     }
 }

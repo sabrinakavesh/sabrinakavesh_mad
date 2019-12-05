@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FR Coffee</string>
+    <string name="heading">FR Coffee Shop Finder</string>
+    <string name="coffeeType">FR Choose your crowd</string>
+    <string name="button">FR Find Coffee</string>
+    <string-array name="crowd">
+        <item>FR popular</item>
+        <item>FR cycling</item>
+        <item>FR hipster</item>
+        <item>FR tea</item>
+        <item>FR hippie</item>
+    </string-array>
+
+    <string name="coffeeImage">French Coffee Cup</string>
+    <string name="suggestedCoffee">FR This is your suggested coffee shop</string>
+    <string name="titleActivityCoffee">FR CoffeeActivity</string>
+    <string name="title_activity_coffee">FR CoffeeActivity</string>
+    <string name="createOrder">FR Order</string>
+    <string name="actionSettings">FR Settings</string>
+    <string name="title_activity_order">FR OrderActivity</string>
+    <string name="orderForm">FR This is a fake order form</string>
+</resources>

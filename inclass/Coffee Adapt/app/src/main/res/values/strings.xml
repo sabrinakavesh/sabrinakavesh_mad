@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Coffee</string>
+    <string name="heading">Coffee Shop Finder</string>
+    <string name="coffeeType">Choose your crowd</string>
+    <string name="button">Find Coffee</string>
+    <string-array name="crowd">
+        <item>popular</item>
+        <item>cycling</item>
+        <item>hipster</item>
+        <item>tea</item>
+        <item>hippie</item>
+    </string-array>
+
+    <string name="coffeeImage">coffee cup</string>
+    <string name="suggestedCoffee">This is your suggested coffee shop</string>
+    <string name="titleActivityCoffee">CoffeeActivity</string>
+    <string name="title_activity_coffee">CoffeeActivity</string>
+    <string name="createOrder">Order</string>
+    <string name="actionSettings">Settings</string>
+    <string name="title_activity_order">OrderActivity</string>
+    <string name="orderForm">This is a fake order form</string>
+</resources>
