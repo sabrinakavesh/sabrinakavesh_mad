@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">lab8</string>
+    <string name="heading">Ice Cream Finder</string>
+    <string name="iceCreamType">Choose your style</string>
+    <string name="button">Find Ice Cream</string>
+    <string-array name="style">
+        <item>traditional</item>
+        <item>gelato</item>
+        <item>froyo</item>
+        <item>local</item>
+    </string-array>
+
+    <string name="iceCreamImage">ice cream bouquet</string>
+    <string name="suggestedIceCream">This is your suggested ice cream store</string>
+    <string name="titleActivityIceCream">CoffeeActivity</string>
+
+</resources>
