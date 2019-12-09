@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         Log.i("store suggested", suggestedIceCreamStoreName);
         Log.i("url suggested", suggestedIceCreamStoreURL);
 
-        Intent intent = new Intent(this,iceCreamStore.class);//orig coffee activity
+        Intent intent = new Intent(this,IceCreamActivity.class);//orig coffee activity
         intent.putExtra("iceCreamStoreName", suggestedIceCreamStoreName);
         intent.putExtra("iceCreamStoreURL", suggestedIceCreamStoreURL);
         startActivity(intent);

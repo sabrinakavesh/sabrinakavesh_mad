@@ -13,5 +13,6 @@
     <string name="iceCreamImage">ice cream bouquet</string>
     <string name="suggestedIceCream">This is your suggested ice cream store</string>
     <string name="titleActivityIceCream">CoffeeActivity</string>
+    <string name="title_activity_ice_cream">IceCreamActivity</string>
 
 </resources>
