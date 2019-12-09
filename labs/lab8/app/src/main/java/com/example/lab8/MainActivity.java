@@ -12,7 +12,7 @@ import android.widget.Spinner;
 public class MainActivity extends AppCompatActivity {
     private Button button;
     private Spinner styleSpinner;
-    private IceCream myIceCream = new IceCream();
+    private iceCreamStore myIceCream = new iceCreamStore();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,15 +33,15 @@ public class MainActivity extends AppCompatActivity {
 
     private void findCoffee(View view){
         Integer crowd = styleSpinner.getSelectedItemPosition();
-        myCoffeeShop.setIceCreamStoreName(crowd);
-        String suggestedCoffeeShop = myCoffeeShop.getIceCreamStoreName();
-        String suggestedCoffeeShopURL = myCoffeeShop.getIceCreamStoreName();
-        Log.i("shop suggested", suggestedCoffeeShop);
-        Log.i("url suggested", suggestedCoffeeShopURL);
+        myIceCream.setIceCreamStoreName(crowd);
+        String suggestedIceCreamStoreName = myIceCream.getIceCreamStoreName();
+        String suggestedIceCreamStoreURL = myIceCream.getIceCreamStoreURL();
+        Log.i("store suggested", suggestedIceCreamStoreName);
+        Log.i("url suggested", suggestedIceCreamStoreURL);
 
-        Intent intent = new Intent(this,CoffeeActivity.class);
-        intent.putExtra("coffeeShopName", suggestedCoffeeShop);
-        intent.putExtra("coffeeShopURL", suggestedCoffeeShopURL);
+        Intent intent = new Intent(this,iceCreamStore.class);//orig coffee activity
+        intent.putExtra("iceCreamStoreName", suggestedIceCreamStoreName);
+        intent.putExtra("iceCreamStoreURL", suggestedIceCreamStoreURL);
         startActivity(intent);
     }
 }

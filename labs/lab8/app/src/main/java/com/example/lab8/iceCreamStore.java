@@ -4,7 +4,7 @@ public class iceCreamStore {
     private String iceCreamStoreName;
     private String iceCreamStoreURL;
 
-    private void setCoffeeInfo(Integer coffeeCrowd){
+    private void setIceCreamInfo(Integer coffeeCrowd){
         switch (coffeeCrowd){
             case 0: //traditional
                 iceCreamStoreName="Ben & Jerry's";
@@ -28,15 +28,15 @@ public class iceCreamStore {
         }
     }
 
-    public String geticeCreamStoreName(){
+    public String getIceCreamStoreName(){
         return iceCreamStoreName;
     }
 
-    public String geticeCreamStoreURL(){
+    public String getIceCreamStoreURL(){
         return iceCreamStoreURL;
     }
 
-    public void seticeCreamStoreName(Integer iceCreamStyle){
+    public void setIceCreamStoreName(Integer iceCreamStyle){
         setIceCreamInfo(iceCreamStyle);
     }
 
