@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     EditText vacIngVerb4;
     Button button;
     TextView readStory;
-//    TextView readStory = findViewById(R.id.storyView);
+    Button resetButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,16 +59,28 @@ public class MainActivity extends AppCompatActivity {
         vacIngVerb3 = findViewById(R.id.vacIngVerb3);
         vacIngVerb4 = findViewById(R.id.vacIngVerb4);
 
-
+        resetButton = findViewById(R.id.resetButton);
         button = findViewById(R.id.storyButton);
         readStory = findViewById(R.id.storyView);
         View.OnClickListener onClick = new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                vacationStory(v);
+                switch (v.getId()){
+                    case R.id.storyButton:
+                        vacationStory(v);
+                        break;
+                    case R.id.resetButton:
+                        resetFields(v);//
+                        break;
+//                    default:
+//                        (v);
+//          switch statement to check which button pressed  https://stackoverflow.com/questions/3412180/how-to-determine-which-button-pressed-on-android
+                }
+//                vacationStory(v);
             }
         };
         button.setOnClickListener(onClick);
+        resetButton.setOnClickListener(onClick);
     }
 
     public void vacationStory(View view) {
@@ -98,4 +110,29 @@ public class MainActivity extends AppCompatActivity {
         readStory.setText(getString(R.string.message) + " " + adj1vac + " " + getString(R.string.message2) + " " + adj2vac + " " + getString(R.string.message3) + " " + noun1vac + " " + getString(R.string.message4) + " " + noun2vac + getString(R.string.message5) + " " + plnoun1vac + " " + getString(R.string.message6) + " " + gamevac + " " + getString(R.string.message7) + " " + plnoun2vac + getString(R.string.message8) + " " + ingverb1vac + " " + getString(R.string.message9) + " " + ingverb2vac + getString(R.string.message10) + " " + plnoun3vac + " " + getString(R.string.message11) + " " + ingverb3vac + getString(R.string.message12) + " " + noun3vac + " " + getString(R.string.message13) + " " + plantvac + " " + getString(R.string.message14) + " " + bodyvac + getString(R.string.message15) + " " + placevac + getString(R.string.message16) + " " + ingverb4vac + getString(R.string.message17) + " " + adj3vac + " " + getString(R.string.message18) + " " +numbervac  + " " + getString(R.string.message19) + " " + plnoun4vac + " " + getString(R.string.message20));
 
     }
+
+    public void resetFields(View view){
+        vacAdj1.setText("");
+        vacAdj2.setText("");
+        vacAdj3.setText("");
+        vacNoun1.setText("");
+        vacNoun2.setText("");
+        vacNoun3.setText("");
+        vacPlNoun1.setText("");
+        vacPlNoun2.setText("");
+        vacPlNoun3.setText("");
+        vacPlNoun4.setText("");
+        vacGame.setText("");
+        vacPlant.setText("");
+        vacBody.setText("");
+        vacPlace.setText("");
+        vacNumber.setText("");
+        vacIngVerb1.setText("");
+        vacIngVerb2.setText("");
+        vacIngVerb3.setText("");
+        vacIngVerb4.setText("");
+        readStory.setText("");
+    }
+
+
 }

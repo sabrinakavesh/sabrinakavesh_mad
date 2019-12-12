@@ -21,7 +21,8 @@
     <string name="vacIngVerb3">Verb ending \"ing\"</string>
     <string name="vacIngVerb4">Verb ending \"ing\"</string>
     <string name="storyButton">Read Story</string>
-    <string name="message">A vacation is when to take a trip to some</string>
+    <string name="resetButton">Reset</string>
+    <string name="message">A vacation is when you take a trip to some</string>
     <string name="message2">place with your</string>
     <string name="message3">family. Usually you go to some place that is near a/an</string>
     <string name="message4">or up on a/an</string>

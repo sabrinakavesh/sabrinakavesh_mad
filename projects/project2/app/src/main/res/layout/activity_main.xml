@@ -365,26 +365,38 @@
                 android:layout_marginTop="50dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="24dp"
+                android:freezesText="true"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/primaryTextColor"
-                android:freezesText="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/storyButton"
                 app:layout_constraintVertical_bias="0.0" />
-<!--          for freezes text:  https://stackoverflow.com/questions/31528528/why-doesnt-textview-with-an-id-automatically-save-its-state-->
+            <!--          for freezes text:  https://stackoverflow.com/questions/31528528/why-doesnt-textview-with-an-id-automatically-save-its-state-->
 
             <Button
                 android:id="@+id/storyButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
                 android:layout_marginTop="32dp"
+                android:layout_marginEnd="70dp"
                 android:onClick="vacationStory"
                 android:text="@string/storyButton"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintEnd_toStartOf="@+id/resetButton"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vacPlNoun4" />
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="64dp"
+                android:onClick="resetFields"
+                android:text="@string/resetButton"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/vacPlNoun4" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
