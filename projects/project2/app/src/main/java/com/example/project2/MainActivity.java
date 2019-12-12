@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -29,12 +30,15 @@ public class MainActivity extends AppCompatActivity {
     EditText vacIngVerb2;
     EditText vacIngVerb3;
     EditText vacIngVerb4;
+    Button button;
+    TextView readStory;
+//    TextView readStory = findViewById(R.id.storyView);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+//        setContentView(readStory);
         vacAdj1 = findViewById(R.id.vacAdj1);
         vacAdj2 = findViewById(R.id.vacAdj2);
         vacAdj3 = findViewById(R.id.vacAdj3);
@@ -55,24 +59,16 @@ public class MainActivity extends AppCompatActivity {
         vacIngVerb3 = findViewById(R.id.vacIngVerb3);
         vacIngVerb4 = findViewById(R.id.vacIngVerb4);
 
-            //****instructions for how to save onsaveinstance state to save story
-//       findViewById(R.id.);
-//        vacAdj3
-//        vacNoun3
-//        vacPlNoun1
-//        vacPlNoun2
-//        vacPlNoun3
-//        vacPlNoun4
-//        vacGame
-//        vacPlant
-//        vacBody
-//        vacPlace
-//        vacNumber
-//        vacIngVerb1
-//        vacIngVerb2
-//        vacIngVerb3
-//        vacIngVerb4
 
+        button = findViewById(R.id.storyButton);
+        readStory = findViewById(R.id.storyView);
+        View.OnClickListener onClick = new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                vacationStory(v);
+            }
+        };
+        button.setOnClickListener(onClick);
     }
 
     public void vacationStory(View view) {
@@ -97,13 +93,9 @@ public class MainActivity extends AppCompatActivity {
         String ingverb3vac = vacIngVerb3.getText().toString();
         String ingverb4vac = vacIngVerb4.getText().toString();
 
+//        TextView readStory = findViewById(R.id.storyView);
 
-//        String  = .getText().toString();
-//        String  =
-
-        TextView readStory = findViewById(R.id.storyView);
-        //readStory.setText("A vacation is when to take a trip to some " + adj1vac + " place with your " + adj2vac + " family. Usually you go to some place that is near a/an " + noun1vac + " or up on a/an " + noun2vac + ".");
-        readStory.setText(getString(R.string.message) + " " + adj1vac + " " + getString(R.string.message2) + " " + adj2vac + " " + getString(R.string.message3) + " " + noun1vac + " " + getString(R.string.message4) + " " + noun2vac + getString(R.string.message5) + " " + plnoun1vac + " " + getString(R.string.message6) + getString(R.string.message7) + getString(R.string.message8) + getString(R.string.message9) + getString(R.string.message10));
+        readStory.setText(getString(R.string.message) + " " + adj1vac + " " + getString(R.string.message2) + " " + adj2vac + " " + getString(R.string.message3) + " " + noun1vac + " " + getString(R.string.message4) + " " + noun2vac + getString(R.string.message5) + " " + plnoun1vac + " " + getString(R.string.message6) + " " + gamevac + " " + getString(R.string.message7) + " " + plnoun2vac + getString(R.string.message8) + " " + ingverb1vac + " " + getString(R.string.message9) + " " + ingverb2vac + getString(R.string.message10) + " " + plnoun3vac + " " + getString(R.string.message11) + " " + ingverb3vac + getString(R.string.message12) + " " + noun3vac + " " + getString(R.string.message13) + " " + plantvac + " " + getString(R.string.message14) + " " + bodyvac + getString(R.string.message15) + " " + placevac + getString(R.string.message16) + " " + ingverb4vac + getString(R.string.message17) + " " + adj3vac + " " + getString(R.string.message18) + " " +numbervac  + " " + getString(R.string.message19) + " " + plnoun4vac + " " + getString(R.string.message20));
 
     }
 }
