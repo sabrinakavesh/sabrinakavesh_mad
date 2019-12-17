@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">skFinal</string>
+    <string name="heading">Burrito Builder</string>
+    <string name="button">Build</string>
+    <string name="toggle_on">Meat</string>
+    <string name="toggle_off">Veggie</string>
+    <string-array name="exercise">
+        <item>The Hill</item>
+        <item>29th Street</item>
+        <item>Pearl Street</item>
+    </string-array>
+    <string name="radio1">Burrito</string>
+    <string name="radio2">Taco</string>
+    <string name="salsa">Salsa</string>
+    <string name="sourcream">Sour Cream</string>
+    <string name="cheese">Cheese</string>
+    <string name="guac">Guacamole</string>
+    <string name="name">Name</string>
+    <string name="suggestedBurrito">This is your suggested Burrito/Taco Store</string>
+    <string name="message1">wants a </string>
+    <string name="message2">with</string>
+    <string name="message3">in a corn tortilla with </string>
+    <string name="message4">. You should eat at</string>
+    <string name="message5">on</string>
+    <string name="message6">.</string>
+</resources>
